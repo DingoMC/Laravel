@@ -1,0 +1,240 @@
+/*
+    User Roles
+*/
+.user-role {
+    justify-self: center;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    padding: 0 0.3rem;
+    border-radius: 0.65rem;
+    border: 1px solid;
+}
+.role-user {
+    border-color: #676767;
+    color: #676767;
+    background-color: #eaeaea;
+}
+.role-moderator {
+    font-weight: bold;
+    animation: moderator-change 4s linear infinite alternate;
+}
+@keyframes moderator-change {
+    from {
+        border-color: #008900;
+        color: #008900;
+        background-color: #daeada;
+    }
+    to {
+        border-color: #008989;
+        color: #008989;
+        background-color: #daeaea;
+    }
+}
+.role-admin {
+    font-weight: bold;
+    animation: admin-change 4s linear infinite alternate;
+}
+@keyframes admin-change {
+    from {
+        border-color: #890000;
+        color: #890000;
+        background-color: #eadada;
+    }
+    to {
+        border-color: #890089;
+        color: #890089;
+        background-color: #eadaea;
+    }
+}
+/*
+    Navbar
+*/
+.nav-link.admin-link {
+    color: rgba(255, 170, 170, 0.8) !important;
+}
+.dropdown-item.logout {
+    color: #ff4545 !important;
+}
+/*
+    /mycourses
+*/
+.no-active-courses {
+    color: #775555;
+}
+.card {
+    margin-bottom: 0.5rem;
+}
+.card.active-courses {
+    border-color: #99aa99;
+}
+.card.active-courses span, .card.other-courses span  {
+    text-align: center;
+    align-self: center;
+}
+.card.active-courses .card-header {
+    background-color: #eeffee;
+    color: #109910;
+    font-weight: bold;
+}
+.no-other-courses {
+    color: #08aa08;
+}
+.card.other-courses {
+    border-color: #78aaaa;
+}
+.card.other-courses .card-header {
+    background-color: #eeffff;
+    color: #109999;
+    font-weight: bold;
+}
+.card.active-courses .card-body, .card.other-courses .card-body {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    row-gap: 0.35rem;
+    column-gap: 0.5rem;
+    text-align: center;
+}
+.user-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+}
+/*
+    admin
+*/
+.card.admin .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card.admin table {
+    border: 2px solid #cdcdcd;
+    border-radius: 0.5rem;
+}
+.card.admin thead {
+    border: 2px solid #cdcdcd;
+    background-color: #e0e0f9;
+}
+.card.admin th {
+    border: 2px solid #cdcdcd;
+    padding: 0.2rem;
+}
+.card.admin td {
+    height: max-content;
+    border: 1px solid #dedede;
+    border-left: 2px solid #cdcdcd !important;
+    padding: 0.2rem;
+}
+.card.admin tbody > tr:nth-child(even) {
+    background-color: #e9e9ff;
+}
+.card.admin tbody > tr:nth-child(odd) {
+    background-color: #f6f6ff;
+}
+.card.admin table .centered {
+    text-align: center;
+    justify-content: center;
+}
+.card.admin tfoot {
+    border: 2px solid #cdcdcd;
+    background-color: #d9d9f0;
+}
+.card.admin .user-total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.card.admin .enrolls-total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.card.admin .tag-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/*
+    User Settings
+*/
+.user-settings .form-text {
+    padding-top: 0.3rem;
+}
+.user-settings .form-bottom {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    column-gap: 0.4rem;
+    margin-top: 0.4rem;
+}
+.card.danger-zone {
+    border-color: #890000 !important;
+}
+.card.danger-zone > .card-header {
+    border-color: #890000 !important;
+    color: #780000 !important;
+    background-color: #ffe0e0 !important;
+}
+.card.danger-zone .danger-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: fit-content;
+    margin-bottom: 0.5rem
+}
+.danger-content a, .danger-content span {
+    display: block;
+    justify-self: left;
+    text-align: left;
+    width: fit-content;
+}
+.danger-button {
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #ed2323;
+    border-radius: 0.3rem;
+    color: #ed2323;
+    text-decoration: none;
+    background-color: #fff8f8;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;
+}
+.danger-button:hover {
+    color: #ededed;
+    background-color: #ed2323;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 720px) {
+    .card.admin table * {
+        font-size: 0.8rem !important;
+        word-break: break-all;
+    }
+    .user-role {
+        margin: 0 0.2rem;
+        padding: 0 0.2rem;
+    }
+    .card.admin th {
+        padding: 0.1rem;
+    }
+    .card.admin td {
+        padding: 0.1rem;
+    }
+    .card.admin .btn-primary, .card.admin .danger-button {
+        padding: 0.2rem 0.3rem !important;
+    }
+}

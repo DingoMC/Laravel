@@ -1,0 +1,63 @@
+.card-title > img {
+    width: 2.5rem;
+    height: 2.5rem;
+    /* aspect-ratio: 1/1; -> Eksperymentalnie */
+    margin-right: 0.4rem;
+}
+.card {transition: all 1s;}
+.angular:hover {
+    border-color: rgba(195, 0, 47, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(211, 16, 63, 1);
+}
+.mithril:hover {
+    border-color: rgba(88, 169, 88, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(104, 185, 104, 1);
+}
+.ember:hover {
+    border-color: rgba(225, 74, 48, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(241, 90, 64, 1);
+}
+.vue:hover {
+    border-color: rgba(65, 184, 131, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(81, 200, 147, 1);
+}
+.react:hover {
+    border-color: rgba(97, 218, 251, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(113, 234, 255, 1);
+}
+.meteor:hover {
+    border-color: rgba(223, 79, 79, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(239, 95, 95, 1);
+}
+.polymer:hover {
+    border-color: rgba(125, 113, 202, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(141, 129, 218, 1);
+}
+.node:hover {
+    border-color: rgba(109, 167, 93, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(125, 183, 109, 1);
+}
+.aurelia:hover {
+    border-color: rgba(175, 25, 119, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(191, 41, 135, 1);
+}
+.backbone:hover {
+    border-color: rgba(0, 78, 123, 1) !important;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(16, 94, 139, 1);
+}
+#slideshow img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+#slideshow {
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+#slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+#slideshow img.active {z-index: 10;}
+#slideshow img.last-active {z-index: 9;}

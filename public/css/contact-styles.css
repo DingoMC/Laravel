@@ -1,0 +1,56 @@
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    font-size: 0.9rem;
+    max-width: 640px;
+}
+form > h5 {
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #551255;
+}
+form > textarea {
+    max-height: 120px;
+}
+#map {
+    margin-bottom: 0.45rem;
+    width: auto;
+    aspect-ratio: 4 / 3;
+    max-width: 600px;
+    max-height: 450px;
+}
+#right {
+    display: flex;
+    justify-content: right;
+}
+#send, #send:hover {
+    color: #ffffff;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    width: max-content;
+}
+#send {
+    background-color: #774599;
+    border: 2px solid #663488;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+#send:hover {
+    background-color: #9967bb;
+    border: 2px solid #8856aa;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+#send:disabled {
+    background-color: #777777;
+    color: #a9a9a9;
+    border: 2px solid #a97777;
+}
+@media screen and (max-width: 380px) {
+    #map {
+        width: auto;
+        aspect-ratio: 4 / 3;
+        max-width: 360px;
+        max-height: 270px;
+    }
+}

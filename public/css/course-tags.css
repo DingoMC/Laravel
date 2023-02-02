@@ -1,0 +1,62 @@
+.course {
+    align-self: center;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    padding: 0 0.3rem;
+    border-radius: 0.65rem;
+    border: 1px solid;
+}
+.angular-tag {
+    border-color: #c3002f;
+    color: #c3002f;
+    background-color: #ffccd0;
+}
+.mithril-tag {
+    border-color: #50a150;
+    color: #50a150;
+    background-color: #c7edc7;
+}
+.ember-tag {
+    border-color: #e14a30;
+    color: #e14a30;
+    background-color: #ffddcc;
+}
+.vue-tag {
+    border-color: #38b580;
+    color: #38b580;
+    background-color: #ccffdd;
+}
+.react-tag {
+    border-color: #25b0d0;
+    color: #25b0d0;
+    background-color: #ccefff;
+}
+.meteor-tag {
+    border-color: #df4f4f;
+    color: #df4f4f;
+    background-color: #ffcfcf;
+}
+.polymer-tag {
+    border-color: #7d71ca;
+    color: #7d71ca;
+    background-color: #ddd1ff;
+}
+.node-tag {
+    border-color: #64a054;
+    color: #64a054;
+    background-color: #cbeebc;
+}
+.aurelia-tag {
+    border-color: #af1977;
+    color: #af1977;
+    background-color: #ffbcdd;
+}
+.backbone-tag {
+    border-color: #004e7b;
+    color: #004e7b;
+    background-color: #bbdcef;
+}
